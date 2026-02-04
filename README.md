@@ -180,6 +180,23 @@ The frontend will be available at:
 
 http://localhost:5173
 
+# Password Security Notes
+
+Passwords are hashed using bcrypt.
+bcrypt has a maximum input size of 72 bytes.
+
+To ensure stability and prevent runtime errors,
+passwords are truncated to 72 bytes before hashing and verification.
+
+# Tested Environment
+
+Operating System: Windows 10 / Windows 11
+Python Version: 3.10.x
+Node.js Version: 18.x
+PostgreSQL Version: 14+
+
+
+
 # Application Usage
 
 1 ) Register a new user using the Register page ,
