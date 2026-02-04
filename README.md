@@ -22,12 +22,30 @@ Version control is done using Git and GitHub .
 
 # Backend Setup Instructions
 # Prerequisites for Backend
+Python version 3.10 is required.
+This project is tested and stable on Python 3.10.
+Newer versions such as Python 3.13 are not supported due to
+dependency compatibility issues with bcrypt and PostgreSQL drivers.
 
 You must have the following installed on your system before running the backend.
-1) Python version 3.9 or above , 
+1) Python version 3.10 only , 
 2) PostgreSQL database , 
 3) Git ,
 4) Command Prompt or Terminal .
+
+ #  Important Environment Notes
+
+This backend uses bcrypt for password hashing.
+bcrypt has strict compatibility requirements with Python versions.
+
+To avoid runtime errors:
+- Use Python 3.10 only,
+- Create the virtual environment explicitly using Python 3.10,
+- Do not use Python 3.13 or newer for this project.
+
+Example command:
+py -3.10 -m venv venv
+
 
 # Step 1: Install PostgreSQL
 
