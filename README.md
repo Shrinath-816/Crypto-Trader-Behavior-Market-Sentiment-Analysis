@@ -1,5 +1,4 @@
-# PrimeTrade Intern Assignment
-Full Stack Application with Secure Authentication and Role Based Access
+#  Full Stack Application with Secure Authentication and Role Based Access
 
 # Project Overview
 
